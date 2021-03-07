@@ -112,10 +112,10 @@ function digits(a) {
 
 export function numberCalc(type, a1, a2) {
   if (Number.isNaN(a1) || Number.isNaN(a2)) {
-   
+    const reg= /\W/;
     return a1 + type + a2;
   }
-   const reg= /?\.\/i;
+  
   const al1 = digits(a1);
   const al2 = digits(a2);
   const num1 = Number(a1);
