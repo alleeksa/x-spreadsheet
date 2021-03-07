@@ -111,8 +111,9 @@ function digits(a) {
 }
 
 export function numberCalc(type, a1, a2) {
+  const reg= /\W/;
   if (Number.isNaN(a1) || Number.isNaN(a2)) {
-    const reg= /\W/;
+    
     return a1 + type + a2;
   }
   
