@@ -113,7 +113,7 @@ function digits(a) {
 export function numberCalc(type, a1, a2) {
   if (Number.isNaN(a1) || Number.isNaN(a2)) {
     const reg= /?\.\/i;
-    return a1 + type + a2;
+   // return a1 + type + a2;
   }
   const al1 = digits(a1);
   const al2 = digits(a2);
