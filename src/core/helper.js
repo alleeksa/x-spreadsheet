@@ -110,8 +110,8 @@ function digits(a) {
   return ret;
 }
 
-/* export function numberCalc(type, a1, a2) {
-  const reg= /\W/;
+ export function numberCalc(type, a1, a2) {
+  const reg= /^\W/$;
   if (Number.isNaN(a1) || Number.isNaN(a2)) {
     
     return a1 + type + a2;
@@ -134,7 +134,7 @@ function digits(a) {
     return ret;
   }
   return ret.toFixed(Math.max(al1, al2));
-}*/
+}
 
 export default {
   cloneDeep,
